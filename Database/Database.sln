@@ -7,6 +7,13 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Databa
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database.Test", "Database.Test\Database.Test.sqlproj", "{0B9C79F3-575E-4E5E-9393-1EAAC2DAE596}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B4ADA5FA-2DC3-4DA4-BCB5-4C5B21144BA2}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Doc.md = Documentation\Doc.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{39721F2D-CFB6-4B25-93EF-CC958D7B28E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +35,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39721F2D-CFB6-4B25-93EF-CC958D7B28E7} = {B4ADA5FA-2DC3-4DA4-BCB5-4C5B21144BA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C012BD8-EEBC-4CEA-BE4D-05C0926032F7}
