@@ -238,6 +238,9 @@
     <Build Include="Security\tSQLt.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
     <Build Include="tSQLt\Views\Private_SysIndexes.sql" />
+    <Build Include="tSQLt\Tables\Private_AssertEqualsTableSchema_Expected.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertStringIn.sql" />
+    <Build Include="tSQLt\User Defined Types\AssertStringTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
