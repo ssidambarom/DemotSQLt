@@ -7,14 +7,14 @@
     <Name>YourApplicationDb</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{6ea621f2-d25d-4cfd-a466-0bb71e0a9661}</ProjectGuid>
+    <ProjectGuid>{be3ce712-5a5c-40b8-8f7c-ac813486ef18}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
     <RootNamespace>YourApplicationDb</RootNamespace>
     <AssemblyName>YourApplicationDb</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -59,47 +61,15 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
-    <Folder Include="dbo\Views\" />
-    <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Employees.sql" />
-    <Build Include="dbo\Tables\Categories.sql" />
     <Build Include="dbo\Tables\Customers.sql" />
-    <Build Include="dbo\Tables\Shippers.sql" />
-    <Build Include="dbo\Tables\Suppliers.sql" />
+    <Build Include="dbo\Tables\Categories.sql" />
+    <Build Include="dbo\Tables\Employees.sql" />
+    <Build Include="dbo\Tables\OrderDetails.sql" />
     <Build Include="dbo\Tables\Orders.sql" />
     <Build Include="dbo\Tables\Products.sql" />
-    <Build Include="dbo\Tables\Order Details.sql" />
-    <Build Include="dbo\Tables\CustomerCustomerDemo.sql" />
-    <Build Include="dbo\Tables\CustomerDemographics.sql" />
-    <Build Include="dbo\Tables\Region.sql" />
-    <Build Include="dbo\Tables\Territories.sql" />
-    <Build Include="dbo\Tables\EmployeeTerritories.sql" />
-    <Build Include="dbo\Views\Customer and Suppliers by City.sql" />
-    <Build Include="dbo\Views\Alphabetical list of products.sql" />
-    <Build Include="dbo\Views\Current Product List.sql" />
-    <Build Include="dbo\Views\Orders Qry.sql" />
-    <Build Include="dbo\Views\Products Above Average Price.sql" />
-    <Build Include="dbo\Views\Products by Category.sql" />
-    <Build Include="dbo\Views\Quarterly Orders.sql" />
-    <Build Include="dbo\Views\Invoices.sql" />
-    <Build Include="dbo\Views\Order Details Extended.sql" />
-    <Build Include="dbo\Views\Order Subtotals.sql" />
-    <Build Include="dbo\Views\Product Sales for 1997.sql" />
-    <Build Include="dbo\Views\Category Sales for 1997.sql" />
-    <Build Include="dbo\Views\Sales by Category.sql" />
-    <Build Include="dbo\Views\Sales Totals by Amount.sql" />
-    <Build Include="dbo\Views\Summary of Sales by Quarter.sql" />
-    <Build Include="dbo\Views\Summary of Sales by Year.sql" />
-    <Build Include="dbo\Stored Procedures\Ten Most Expensive Products.sql" />
-    <Build Include="dbo\Stored Procedures\Employee Sales by Country.sql" />
-    <Build Include="dbo\Stored Procedures\Sales by Year.sql" />
-    <Build Include="dbo\Stored Procedures\CustOrdersDetail.sql" />
-    <Build Include="dbo\Stored Procedures\CustOrdersOrders.sql" />
-    <Build Include="dbo\Stored Procedures\CustOrderHist.sql" />
-    <Build Include="dbo\Stored Procedures\SalesByCategory.sql" />
-    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="dbo\Tables\Shippers.sql" />
+    <Build Include="dbo\Tables\Suppliers.sql" />
   </ItemGroup>
 </Project>
