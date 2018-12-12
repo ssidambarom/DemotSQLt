@@ -16,7 +16,9 @@
 4) Ajouter une référence de base de données *master* dans votre projet de test
 ![img][2]
 
+## Configuration des project et de la solution
 
+1) Click droit > propriété > Debug
 
 
 
